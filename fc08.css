@@ -1,0 +1,188 @@
+body {
+    background-color: #ddd;
+    margin: 0;
+    max-width: 800px;
+    font: 16px georgia, serif;
+}
+
+body a {
+    text-decoration: none;
+    color: grey;
+}
+
+body a:hover, body a:active {
+    color: #ddd;
+}
+
+ul li {
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+}
+
+.short_link {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    display: grid;
+    grid-template-areas:
+        'main button5';
+    grid-template-rows: auto;
+    grid-template-columns: auto 32px;
+}
+
+.link_title {
+    grid-area: main;
+}
+
+.section {
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    display: grid;
+    grid-template-areas:
+        'main main main main main'
+        'empty button1 button2 button3 button4';
+    grid-template-rows: auto auto;
+    grid-template-columns: auto 64px 64px 64px 64px;
+}
+
+.section_text {
+    grid-area: main;
+}
+
+.scholar_button {
+    grid-area: button1;
+    margin: auto;
+}
+
+.orcid_button {
+    grid-area: button2;
+    margin: auto;
+}
+
+.arxiv_main_button {
+    grid-area: button3;
+    margin: auto;
+}
+
+.linkedin_button {
+    grid-area: button4;
+    margin: auto;
+}
+
+.publication, .thesis {
+    display: grid;
+    grid-template-areas:
+        'line1 line1 line1 line1 line1 line1'
+        'line2 line2 line2 line2 line2 line2'
+        'line3 line3 line3 line3 line3 line3'
+        'button1 empty button2 button3 button4 button5';
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 32px auto 32px 32px 32px 32px;
+}
+
+.citation_title, .thesis_title {
+    grid-area: line2;
+}
+
+.citation_title {
+    grid-area: line2;
+    color: #4CAF50;
+    font-style: italic;
+}
+
+.thesis_title i {
+    color: #4CAF50;
+    font-style: italic;
+}
+
+.citation_title em, .thesis_title i em {
+    font-style: normal;
+}
+
+.citation_authors, .thesis_uni {
+    grid-area: line1;
+}
+
+.citation_journal, .thesis_supervisors {
+    grid-area: line3;
+}
+
+.oa_button {
+    grid-area: button1;
+    margin: auto;
+}
+
+.button_2 {
+    grid-area: button2;
+    margin: auto;
+}
+
+.button_3 {
+    grid-area: button3;
+    margin: auto;
+}
+
+.button_4 {
+    grid-area: button4;
+    margin: auto;
+}
+
+.button_5, .link_button {
+    grid-area: button5;
+    margin: auto;
+}
+
+.ai, .fa-1x {
+    color: grey;
+}
+
+.ai-open-access-square {
+    color: #4CAF50;
+}
+
+.ai-doi-square:hover, .ai-figshare-square:hover, .ai-dryad-square:hover, .ai-arxiv-square:hover, .ai-google-scholar-square:hover, .ai-orcid-square:hover, .fa-link:hover {
+    color: #ddd;
+}
+
+ol {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+ol li {
+    float: left;
+}
+
+ol li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+ol li a:hover:not(.active) {
+    background-color: #ddd;
+    color: grey;
+}
+
+ol li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -40px;
+    visibility: hidden;
+}
