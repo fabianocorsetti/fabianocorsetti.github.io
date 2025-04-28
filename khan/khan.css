@@ -1,0 +1,15 @@
+body {
+  background-color: #e1edf0;
+}
+h1 {
+  color: #75acb4;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 15vw;
+}
+mark {
+  background-color: #afcace;
+  color: #5d5c61;
+}
+ul {
+    font-family: "Georgia", serif;
+}
